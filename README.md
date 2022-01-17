@@ -55,4 +55,4 @@
 11. Alpha diversity and Beta diversity
 
 * It is summarized as follows:
-![QIIME MMBU 16S-Accreditation Pipeline](![image](https://user-images.githubusercontent.com/91982522/149777440-1efe7a27-8034-492e-944d-d9edaa7b35ed.png))
+![image](https://user-images.githubusercontent.com/91982522/149777440-1efe7a27-8034-492e-944d-d9edaa7b35ed.png)
