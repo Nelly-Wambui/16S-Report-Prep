@@ -39,7 +39,7 @@
 * Steps in the pipeline:
 ![DADA2 MBBU 16S-Accreditation pipeline](https://github.com/mbbu/Reviewing-16s-Analysis-Workflows/blob/main/MBBU-16S-Accreditation-Dada2-Pipeline-Steps%20(2).png)
 
-### QIIME MMBU 16S-Accreditation Pipeline
+### QIIME MBBU 16S-Accreditation Pipeline
 
 * The analysis pipeline follows the following order:
 1. Quality check of raw reads
