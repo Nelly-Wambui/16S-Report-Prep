@@ -6,4 +6,4 @@ nf-core/ampliseq pipeline
 * Default is the analysis of 16S rRNA gene amplicons sequenced paired-end with Illumina.
 * The pipeline is built using Nextflow.
 * It runs with Conda, Docker, and Singularity.
-* [Image of how it runs and output expected](https://github.com/nf-core/ampliseq/blob/master/docs/images/ampliseq_workflow.png)
+* ![Image of how it runs and output expected](https://github.com/nf-core/ampliseq/blob/master/docs/images/ampliseq_workflow.png)
