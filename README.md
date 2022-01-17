@@ -1,7 +1,8 @@
 # 16S-Report-Prep
 
 ## nf-core/ampliseq pipeline
-* [Link to the pipeline github repository](https://github.com/nf-core/ampliseq)
+* The pipeline can be accessed [here](https://github.com/nf-core/ampliseq).
+* Its current version is Ampliseq Version 2.1.1.
 * It is a bioinformatics analysis pipeline used for amplicon sequencing, supporting denoising of any amplicon and, currently, taxonomic assignment of 16S, ITS and 18S amplicons. 
 * Supported is paired-end Illumina or single-end Illumina, PacBio and IonTorrent data. 
 * Default is the analysis of 16S rRNA gene amplicons sequenced paired-end with Illumina.
@@ -24,17 +25,17 @@
 
 * The following packages are required:
 1. DADA2
-2.	phyloseq
-3.	dplyr
-4.	vegan
-5.	phangorn
-6.	ggplot2
-7.	scales
-8.	grid
-9.	reshape2
-10.	profvis
-11.	DECIPHER
-12.	Rcolorbrewer
+2. phyloseq
+3. dplyr
+4. vegan
+5. phangorn
+6. ggplot2
+7. scales
+8. grid
+9. reshape2
+10. profvis
+11. DECIPHER
+12. Rcolorbrewer
 
 * Steps in the pipeline:
 ![DADA2 MBBU 16S-Accreditation pipeline](https://github.com/mbbu/Reviewing-16s-Analysis-Workflows/blob/main/MBBU-16S-Accreditation-Dada2-Pipeline-Steps%20(2).png)
