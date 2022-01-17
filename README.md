@@ -39,8 +39,9 @@
 * Steps in the pipeline:
 ![DADA2 MBBU 16S-Accreditation pipeline](https://github.com/mbbu/Reviewing-16s-Analysis-Workflows/blob/main/MBBU-16S-Accreditation-Dada2-Pipeline-Steps%20(2).png)
 
-### 
-*   The steps the pipeline follows:
+### QIIME MMBU 16S-Accreditation Pipeline
+
+* The analysis pipeline follows the following order:
 1. Quality check of raw reads
 2. Trimming of adapters from reads
 3. Merging/Stitching
@@ -52,3 +53,6 @@
 9. Phylogeny
 10. Taxonomy
 11. Alpha diversity and Beta diversity
+
+* It is summarized as follows:
+![QIIME MMBU 16S-Accreditation Pipeline](![image](https://user-images.githubusercontent.com/91982522/149777440-1efe7a27-8034-492e-944d-d9edaa7b35ed.png)
