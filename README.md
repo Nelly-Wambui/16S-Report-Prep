@@ -38,3 +38,17 @@
 
 * Steps in the pipeline:
 ![DADA2 MBBU 16S-Accreditation pipeline](https://github.com/mbbu/Reviewing-16s-Analysis-Workflows/blob/main/MBBU-16S-Accreditation-Dada2-Pipeline-Steps%20(2).png)
+
+### 
+*   The steps the pipeline follows:
+1. Quality check of raw reads
+2. Trimming of adapters from reads
+3. Merging/Stitching
+4. Filtering and Primer removal
+5. Orientation
+6. Dereplication
+7. Chimera detection
+8. Clustering OTUs
+9. Phylogeny
+10. Taxonomy
+11. Alpha diversity and Beta diversity
