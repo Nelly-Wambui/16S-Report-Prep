@@ -18,6 +18,7 @@
 
 ## MBBU 16S-Accreditation
 * This is a workflow for 16SrRNA analysis.
+* The current version is Accreditation_Zenodo
 * There are pipelines for Dada2 and Qiime and can be found [here](https://github.com/mbbu/16S_Accreditation/blob/main/Dada2_report.md)
 * The Dada2 pipeline is written in R, while the Qiime pipeline is built with Nextflow.
 
