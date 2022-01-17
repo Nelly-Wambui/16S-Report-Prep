@@ -19,7 +19,10 @@
 * This is a workflow for 16SrRNA analysis.
 * There are pipelines for Dada2 and Qiime and can be found [here](https://github.com/mbbu/16S_Accreditation/blob/main/Dada2_report.md)
 * The Dada2 pipeline is written in R, while the Qiime pipeline is built with Nextflow.
-* In running the Dada2 pipeline, the following packages are installed:
+
+### DADA2 MBBU 16S-Accreditation pipeline
+
+* The following packages are required:
 1. DADA2
 2.	phyloseq
 3.	dplyr
@@ -32,3 +35,5 @@
 10.	profvis
 11.	DECIPHER
 12.	Rcolorbrewer
+
+* Steps in the pipeline:
