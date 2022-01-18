@@ -1,7 +1,21 @@
 # 16S-Report-Prep
+## Introduction
+16S rRNA is a gene that encodes the RNA component of the small subunit(30S subunit) of ribosomes in bacteria and archaea. It is called "the molecular fossil" of bacteria because of being highly conserved and specific. This makes it the most widely used gene marker for genus and species identification, as well as taxonomic significance. The gene is about 1500bp and is composed of both conserved regions and variable regions. The conserved region is shared while the variable regions have differences among different bacteria and therefore providing information on the specificity of the genus and the species. 
+
+16S rRNA is used in microbiome analysis. Analysis pipelines have been developed and improved over the years and include Qiime and Dada2 pipelines. As our internship project, we reviewed some of the existing pipelines and came up with a conclusion on the best among the following:
+- https://github.com/nf-core/ampliseq 
+- https://h3abionet.github.io/H3ABionet-SOPs/16s-rRNA-1-0.html
+- https://github.com/h3abionet/TADA
+- https://github.com/mbbu/16S_Accreditation
+- https://github.com/h3abionet/h3abionet16S
+
+## H3ABionet-SOPs
+* This only provided an analysis workflow summarised [here](https://github.com/h3abionet/H3ABionet-SOPs/blob/master/pages/genomics_analysis/16s-rRNA/16s-rRNA.md).
+* It is an SOP that refers both to QIIME and QIIME2.
+* Practice dataset and metadata included in the SOP can be obtained in [this link](http://h3data.cbio.uct.ac.za/assessments/16SrRNADiversityAnalysis/practice/)
+* In it are also questions on operation,run-time and output analysis that one would consider having as a criteria in reviewing workflows.
 
 ## nf-core/ampliseq pipeline
-* The pipeline can be accessed [here](https://github.com/nf-core/ampliseq).
 * Its current version is Ampliseq Version 2.1.1.
 * It is a bioinformatics analysis pipeline used for amplicon sequencing, supporting denoising of any amplicon and, currently, taxonomic assignment of 16S, ITS and 18S amplicons. 
 * Supported is paired-end Illumina or single-end Illumina, PacBio and IonTorrent data. 
