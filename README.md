@@ -2,16 +2,18 @@
 ## Introduction
 16S rRNA is a gene that encodes the RNA component of the small subunit(30S subunit) of ribosomes in bacteria and archaea. It is called "the molecular fossil" of bacteria because of being highly conserved and specific. This makes it the most widely used gene marker for genus and species identification, as well as taxonomic significance. The gene is about 1500bp and is composed of both conserved regions and variable regions. The conserved region is shared while the variable regions have differences among different bacteria and therefore providing information on the specificity of the genus and the species. 
 
-The gene is used in microbiome analysis. Analysis pipelines have been developed and improved over the years and include QIIME and DADA2 pipelines. As our internship project, we reviewed some of the existing pipelines and came up with a conclusion on the best among the following:
+The gene is used in microbiome analysis. Analysis pipelines have been developed and improved over the years and include QIIME and DADA2 pipelines. Our internship project required us to review some of the existing pipelines and come up with a conclusion on the best among the following:
 - https://github.com/nf-core/ampliseq 
 - https://h3abionet.github.io/H3ABionet-SOPs/16s-rRNA-1-0.html
 - https://github.com/h3abionet/TADA
 - https://github.com/mbbu/16S_Accreditation
 - https://github.com/h3abionet/h3abionet16S
 
+After testing them we concluded that the nf-core/ampliseq pipeline was the best and we made changes to the 
+
 ## H3ABionet-SOPs/16s-rRNA-1-0.html
 * This only provides an analysis workflow with tools and databases summarised [here](https://github.com/h3abionet/H3ABionet-SOPs/blob/master/pages/genomics_analysis/16s-rRNA/16s-rRNA.md).
-* It is an SOP that refers both to QIIME and QIIME2.
+* It is an SOP that refers to both QIIME and QIIME2.
 * Practice dataset and metadata included in the SOP can be obtained in [this link](http://h3data.cbio.uct.ac.za/assessments/16SrRNADiversityAnalysis/practice/).
 * In it are also questions on operation,run-time and output analysis that one would consider having as a criteria in reviewing workflows.
 * It would be a good SOP for an individual intending to create a QIIME pipeline from scratch.
@@ -99,6 +101,7 @@ nextflow run uct-cbio/16S-rDNA-dada2-pipeline --reads '*_R{1,2}.fastq.gz' --trim
 * We had difficulties running this and due to lack of an easy set-up, we did away with it.
 
 ## Workflow Comparison
+This workflow comparison is only for the pipelines that we tested and found to be running without being so cumbersome and for some without being cumbersome at all.
 
 <table>
     <tr>
@@ -124,29 +127,29 @@ nextflow run uct-cbio/16S-rDNA-dada2-pipeline --reads '*_R{1,2}.fastq.gz' --trim
    </tr>
    <tr>
        <td>Functionality</td>
-       <td>Qiime, Visualization, functional analysis</td>
-       <td>dada2</td>
-       <td>Qiime</td>
-       <td>dada2</td>
+       <td>QIIME2, Visualization, functional analysis</td>
+       <td>DADA2</td>
+       <td>QIIME2</td>
+       <td>DADA2</td>
    </tr>
     <tr>
        <td>Last updated</td>
-       <td>2 months</td>
-       <td>3 months</td>
-       <td>8 months</td>
-       <td>8 months</td>
+       <td>October 2021</td>
+       <td>September 2021</td>
+       <td>April 2021</td>
+       <td>April 2021</td>
    </tr>
    <tr>
        <td>Documentation</td>
        <td>Well documented</td>
        <td>Well documented</td>
-       <td>Lack setup instructions</td>
+       <td>Lacks setup instructions</td>
        <td>Not well documented</td>
    </tr>
     <tr>
        <td>Gaps</td>
        <td>None</td>
-       <td>Test data, Functional analysis, visualization</td>
+       <td>Test data, visualization</td>
        <td>Test config, functional analysis</td>
        <td>Not automated</td>
    </tr>
@@ -157,7 +160,7 @@ nextflow run uct-cbio/16S-rDNA-dada2-pipeline --reads '*_R{1,2}.fastq.gz' --trim
        <td>16S</td>
        <td>16S</td>
    </tr>
-   
+    
 </table>
 
 | Syntax  | Description |
