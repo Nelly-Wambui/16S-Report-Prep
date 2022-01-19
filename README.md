@@ -1,6 +1,6 @@
 # 16S-Report-Prep
 ## Introduction
-16S rRNA is a gene that encodes the RNA component of the small subunit(30S subunit) of ribosomes in bacteria and archaea. It is called "the molecular fossil" of bacteria because of being highly conserved and specific. This makes it the most widely used gene marker for genus and species identification, as well as taxonomic significance. The gene is about 1500bp and is composed of both conserved regions and variable regions. The conserved region is shared while the variable regions have differences among different bacteria and therefore providing information on the specificity of the genus and the species. 
+16S rRNA is a gene that encodes the RNA component of the small subunit(30S subunit) of ribosomes in bacteria and archaea. 16S is a sedimentation coefficient([Dependency Map of Proteins in the Small Ribosomal Subunit](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.0020010)). This is an essential gene required for initiating protein synthesis and the stabilizing correct codon-anticodon pairing in the A site of the ribosome during mRNA translation([The distribution, diversity, and importance of 16S rRNA gene introns in the order Thermoproteales](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4496867/)). It is called "the molecular fossil" of bacteria because of being highly conserved and specific. This makes it the most widely used gene marker for genus and species identification, as well as taxonomic significance([16S/18S/ITS Amplicon Sequencing](https://www.cd-genomics.com/16S-18S-ITS-Amplicon-Sequencing.html)). The gene is about 1500bp and is composed of both conserved regions and variable regions. The conserved region is shared while the variable regions have differences among different bacteria and therefore providing information on the specificity of the genus and the species([16S rRNA, One of the Most Important rRNAs](https://www.cd-genomics.com/blog/16s-rrna-one-of-the-most-important-rrnas/)). 
 
 The gene is used in microbiome analysis. Analysis pipelines have been developed and improved over the years and include QIIME and DADA2 pipelines. Our internship project required us to review some of the existing pipelines and come up with a conclusion on the best among the following:
 - https://github.com/nf-core/ampliseq 
@@ -166,4 +166,4 @@ This workflow comparison is only for the pipelines that we tested and found to b
 | Syntax  | Description |
 |---------|-------------|
 | profile | argument    |
-|---------|-------------|
+| test | 16s |
