@@ -12,7 +12,7 @@ The gene is used in microbiome analysis. Analysis pipelines have been developed 
 After testing them we concluded that the nf-core/ampliseq pipeline was the best and we made changes to the 
 
 ## H3ABionet-SOPs/16s-rRNA-1-0.html
-* This only provides an analysis workflow with tools and databases summarised [here](https://github.com/h3abionet/H3ABionet-SOPs/blob/master/pages/genomics_analysis/16s-rRNA/16s-rRNA.md).
+* This only provides an analysis workflow with tools and databases summarised [here](https://github.com/h3abionet/H3ABionet-SOPs/blob/master/pages/genomics_analysis/16s-rRNA/16s-rRNA.md#appendices-appendices).
 * It is an SOP that refers to both QIIME and QIIME2.
 * Practice dataset and metadata included in the SOP can be obtained in [this link](http://h3data.cbio.uct.ac.za/assessments/16SrRNADiversityAnalysis/practice/).
 * In it are also questions on operation,run-time and output analysis that one would consider having as a criteria in reviewing workflows.
