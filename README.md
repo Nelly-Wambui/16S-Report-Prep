@@ -9,7 +9,22 @@ The gene is used in microbiome analysis. Analysis pipelines have been developed 
 - https://github.com/mbbu/16S_Accreditation
 - https://github.com/h3abionet/h3abionet16S
 
-After testing them we concluded that the nf-core/ampliseq pipeline was the best and we made changes to the 
+After testing them we concluded that the nf-core/ampliseq pipeline was the best and we made changes to the MBBU 16S-Accreditation pipelines (Both Dada2 and Qiime2 pipelines). Those that were challenging to run were dropped early in the review.
+
+## PIPELINES' FUNCTIONALITY
+
+| Criteria | nf-core | H3ABionet-SOPs | H3aBionet-TADA | mbbu-16S_Accreditation-QIIME2 | mbbu-16S_Accreditation-DADA2 |
+| -------- | ------- | -------------- | -------------- | ----------------------------- | ---------------------------- |
+| Tools and Databases | [Tools](https://github.com/nf-core/ampliseq#pipeline-summary),[Databases](https://nf-co.re/ampliseq/parameters#taxonomic-database)| [Tools](https://github.com/h3abionet/H3ABionet-SOPs/blob/master/pages/genomics_analysis/16s-rRNA/16s-rRNA.md#tools-referred-to-in-sop-tools), [Databases](https://github.com/h3abionet/H3ABionet-SOPs/blob/master/pages/genomics_analysis/16s-rRNA/16s-rRNA.md#databases-referred-to-in-sop-databases) | Not well defined | [Tools](https://github.com/mbbu/16S_Accreditation/blob/main/Qiime2_report.md#qiime-nexflow-pipeline), [Databases](https://github.com/mbbu/16S_Accreditation/blob/main/Qiime2_Nextflow/modules/chimera.nf) | [Tools](https://github.com/mbbu/16S_Accreditation/blob/main/Dada2_report.md#set-up), [Databases](https://github.com/mbbu/16S_Accreditation/blob/main/Dada2_Pipeline/dada2_pipeline.R) |
+| QIIME2 | Yes | Yes | No | Yes | No | 
+| DADA2 | No | No | Yes | No | Yes |
+| Practice Dataset and Metadata | [Available](https://github.com/nf-core/ampliseq/blob/master/conf/test.config) | [Available](https://github.com/h3abionet/H3ABionet-SOPs/blob/master/pages/genomics_analysis/16s-rRNA/16s-rRNA.md#h3abionet-assessment-exercises) | N/A | N/A | N/A |
+| Versions | [9 Releases] (https://github.com/nf-core/ampliseq/releases) | N/A (It is an SOP) | [1 Release](https://github.com/h3abionet/TADA/releases) | [1 Release](https://github.com/mbbu/16S_Accreditation/releases) | [1 Release](https://github.com/mbbu/16S_Accreditation/releases) |
+| Command Arguments | [Available](https://nf-co.re/ampliseq/parameters#taxonomic-database) | N/A (It is an SOP) | [Available](https://github.com/h3abionet/TADA/blob/master/docs/usage.md#full-list-of-arguments-example) | 
+
+
+
+
 
 ## H3ABionet-SOPs/16s-rRNA-1-0.html
 * This only provides an analysis workflow with tools and databases summarised [here](https://github.com/h3abionet/H3ABionet-SOPs/blob/master/pages/genomics_analysis/16s-rRNA/16s-rRNA.md#appendices-appendices).
