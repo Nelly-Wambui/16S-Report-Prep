@@ -13,6 +13,14 @@ After testing them we concluded that the nf-core/ampliseq pipeline was the best 
 
 ## PIPELINES' FUNCTIONALITY
 
+* Some of the points int the criteria will be shown in reference to this range: 
+  * 1 - Very good
+  * 2 - Good
+  * 3 - Fairly good
+  * 4 - Bad
+  * 5 - Very bad
+* It is important to note that the MBBU-16S_Accreditation-QIIME2 and MBBU-16S_Accreditation-DADA2 are in the same github repository.
+
 | Criteria | nf-core | H3ABionet-SOPs | H3aBionet-TADA | mbbu-16S_Accreditation-QIIME2 | mbbu-16S_Accreditation-DADA2 |
 | -------- | ------- | -------------- | -------------- | ----------------------------- | ---------------------------- |
 | Tools and Databases | [Tools](https://github.com/nf-core/ampliseq#pipeline-summary),[Databases](https://nf-co.re/ampliseq/parameters#taxonomic-database)| [Tools](https://github.com/h3abionet/H3ABionet-SOPs/blob/master/pages/genomics_analysis/16s-rRNA/16s-rRNA.md#tools-referred-to-in-sop-tools), [Databases](https://github.com/h3abionet/H3ABionet-SOPs/blob/master/pages/genomics_analysis/16s-rRNA/16s-rRNA.md#databases-referred-to-in-sop-databases) | Not well defined | [Tools](https://github.com/mbbu/16S_Accreditation/blob/main/Qiime2_report.md#qiime-nexflow-pipeline), [Databases](https://github.com/mbbu/16S_Accreditation/blob/main/Qiime2_Nextflow/modules/chimera.nf) | [Tools](https://github.com/mbbu/16S_Accreditation/blob/main/Dada2_report.md#set-up), [Databases](https://github.com/mbbu/16S_Accreditation/blob/main/Dada2_Pipeline/dada2_pipeline.R) |
@@ -20,16 +28,17 @@ After testing them we concluded that the nf-core/ampliseq pipeline was the best 
 | DADA2 | No | No | Yes | No | Yes |
 | Practice Dataset and Metadata | [Available](https://github.com/nf-core/ampliseq/blob/master/conf/test.config) | [Available](https://github.com/h3abionet/H3ABionet-SOPs/blob/master/pages/genomics_analysis/16s-rRNA/16s-rRNA.md#h3abionet-assessment-exercises) | N/A | N/A | N/A |
 | Versions | [9 Releases] (https://github.com/nf-core/ampliseq/releases) | N/A (It is an SOP) | [1 Release](https://github.com/h3abionet/TADA/releases) | [1 Release](https://github.com/mbbu/16S_Accreditation/releases) | [1 Release](https://github.com/mbbu/16S_Accreditation/releases) |
-| Command Arguments | [Available](https://nf-co.re/ampliseq/parameters#taxonomic-database) | N/A (It is an SOP) | [Available](https://github.com/h3abionet/TADA/blob/master/docs/usage.md#full-list-of-arguments-example) | 
-
-
-
-
+| Command Arguments | [Available](https://nf-co.re/ampliseq/parameters#taxonomic-database) | N/A (It is an SOP) | [Available](https://github.com/h3abionet/TADA/blob/master/docs/usage.md#full-list-of-arguments-example) | N/A | N/A |
+| Results | [Available](https://nf-co.re/ampliseq/2.1.1/output) | N/A (It is an SOP) | N/A | [Available](https://github.com/mbbu/16S_Accreditation/tree/main/Results) | N/A (While running this R-script, some results are saved: [script](https://github.com/mbbu/16S_Accreditation/blob/main/Dada2_Pipeline/dada2_pipeline.R) | 
+| Documentation | 1 | For the guidelines provided (2), Navigating to the SOP(4) | 3 | 4 | 4|
+| Contributions and Support | [Guidelines and Slack](https://github.com/nf-core/ampliseq#contributions-and-support), 17 contributors, 75 stars, 50 forks | N/A | 7 contributors, 10 stars, 11 forks | 9 contributors, 1 star, 2 forks | 9 contributors, 1 star, 2 forks |
+| Running on cloud | Yes [Results from AWS Cloud](https://nf-co.re/ampliseq/results#ampliseq/results-80b3cb8b05d3b596bd0a52866e7febe40ea497db/) | N/A (It is an SOP) | Yes [AWS configs](https://github.com/h3abionet/TADA/tree/master/conf) | N/A | N/A |
+| Languages | [Codes](https://github.com/nf-core/ampliseq/search?l=Groovy&type=code) | N/A (It is an SOP) | [Codes](https://github.com/h3abionet/TADA/search?l=nextflow) | [Codes](https://github.com/mbbu/16S_Accreditation/search?l=html) | [Codes](https://github.com/mbbu/16S_Accreditation/search?l=html) |
+| Issues | [366](https://github.com/nf-core/ampliseq/search?l=Groovy&type=issues) | N/A (It is an SOP) | [32](https://github.com/h3abionet/TADA/search?l=nextflow&type=issues) | [10](https://github.com/mbbu/16S_Accreditation/search?l=html&type=issues) | [10](https://github.com/mbbu/16S_Accreditation/search?l=html&type=issues) |
+| Sequences | 16S, 18S, ITS |	16S | 16S, ITS | 16S | 16S |
+| Last updated | October 2021 | February 2019 | September 2021 | April 2021 | April 2021 |
 
 ## H3ABionet-SOPs/16s-rRNA-1-0.html
-* This only provides an analysis workflow with tools and databases summarised [here](https://github.com/h3abionet/H3ABionet-SOPs/blob/master/pages/genomics_analysis/16s-rRNA/16s-rRNA.md#appendices-appendices).
-* It is an SOP that refers to both QIIME and QIIME2.
-* Practice dataset and metadata included in the SOP can be obtained in [this link](http://h3data.cbio.uct.ac.za/assessments/16SrRNADiversityAnalysis/practice/).
 * In it are also questions on operation,run-time and output analysis that one would consider having as a criteria in reviewing workflows.
 * It would be a good SOP for an individual intending to create a QIIME pipeline from scratch.
 
@@ -39,75 +48,28 @@ After testing them we concluded that the nf-core/ampliseq pipeline was the best 
 ```
 nextflow run uct-cbio/16S-rDNA-dada2-pipeline --reads '*_R{1,2}.fastq.gz' --trimFor 24 --trimRev 25 --reference 'gg_13_8_train_set_97.fa.gz' -profile uct_hex
 ```
-* The above command holds the mainly required arguments,which are:
-  - **--reads** which specifies the location of your input FastQ files.
-  - **--trimFor and --trimRev** that set length of R1 (--trimFor) and R2 (--trimRev) that needs to be trimmed (if no trimming is needed, then set 0).
-  - **--reference** specifying the path to taxonomic database for annotation.
-  - **-profile** which chooses a configuration profile amongst:
-     
-    `standard`  
-    The default profile, used if -profile is not specified at all. Runs locally and expects all software to be installed and available on the PATH.  
-    `uct_hex`  
-    Designed to run on UCT's high-performance cluster (hex).  
-    `none`  
-    No configuration at all. Useful if you want to build your own config from scratch and want to avoid loading in the default base config profile (not recommended).
 * It outputs results mostly in RDS format.
 
 ## nf-core/ampliseq pipeline
-* Its current version is Ampliseq Version 2.1.1.
 * It is a bioinformatics analysis pipeline used for amplicon sequencing, supporting denoising of any amplicon and, currently, taxonomic assignment of 16S, ITS and 18S amplicons. 
 * Supported is paired-end Illumina or single-end Illumina, PacBio and IonTorrent data. 
 * Default is the analysis of 16S rRNA gene amplicons sequenced paired-end with Illumina.
-* The pipeline is built using Nextflow.
 * It runs with Conda, Docker, Podman,Shifter, Charliecloud and Singularity.
-* It can run on the AWS cloud infrastructure.
 * Command for running the pipeline:
   ```
   nextflow run nf-core/ampliseq -profile <docker/singularity/podman/shifter/charliecloud/conda/institute> --input "path to data" --FW_primer "forward primer sequence" --RV_primer "reverse primer sequence" --metadata "Path to metadata file""
   ```
-* For usage of the pipeline, refer to [this](https://nf-co.re/ampliseq/usage), and for the parameters refer to [these parameters](https://nf-co.re/ampliseq/parameters)
 
 ![Image of how it runs and output expected](https://github.com/nf-core/ampliseq/blob/master/docs/images/ampliseq_workflow.png)
 
 
 ## MBBU 16S-Accreditation
-* This is a workflow for 16SrRNA analysis.
-* The current version is Accreditation_Zenodo
-* The Dada2 pipeline is written in R, while the Qiime pipeline is built with Nextflow.
-
 ### DADA2 MBBU 16S-Accreditation pipeline
-
-* The following packages are required:
-1. DADA2
-2. phyloseq
-3. dplyr
-4. vegan
-5. phangorn
-6. ggplot2
-7. scales
-8. grid
-9. reshape2
-10. profvis
-11. DECIPHER
-12. Rcolorbrewer
 
 * Steps in the pipeline:
 ![DADA2 MBBU 16S-Accreditation pipeline](https://github.com/mbbu/Reviewing-16s-Analysis-Workflows/blob/main/MBBU-16S-Accreditation-Dada2-Pipeline-Steps%20(2).png)
 
 ### QIIME MBBU 16S-Accreditation Pipeline
-
-* The analysis pipeline follows the following order:
-1. Quality check of raw reads
-2. Trimming of adapters from reads
-3. Merging/Stitching
-4. Filtering and Primer removal
-5. Orientation
-6. Dereplication
-7. Chimera detection
-8. Clustering OTUs
-9. Phylogeny
-10. Taxonomy
-11. Alpha diversity and Beta diversity
 
 * It is summarized as follows:
 ![image](https://user-images.githubusercontent.com/91982522/149777440-1efe7a27-8034-492e-944d-d9edaa7b35ed.png)
@@ -141,20 +103,6 @@ This workflow comparison is only for the pipelines that we tested and found to b
        <td>Hard</td>
    </tr>
    <tr>
-       <td>Functionality</td>
-       <td>QIIME2, Visualization, functional analysis</td>
-       <td>DADA2</td>
-       <td>QIIME2</td>
-       <td>DADA2</td>
-   </tr>
-    <tr>
-       <td>Last updated</td>
-       <td>October 2021</td>
-       <td>September 2021</td>
-       <td>April 2021</td>
-       <td>April 2021</td>
-   </tr>
-   <tr>
        <td>Documentation</td>
        <td>Well documented</td>
        <td>Well documented</td>
@@ -167,18 +115,8 @@ This workflow comparison is only for the pipelines that we tested and found to b
        <td>Test data, visualization</td>
        <td>Test config, functional analysis</td>
        <td>Not automated</td>
-   </tr>
-    <tr>
-       <td>Seq</td>
-       <td>16S, 18S, ITS</td>
-       <td>16S, ITS</td>
-       <td>16S</td>
-       <td>16S</td>
-   </tr>
+  
     
 </table>
 
-| Syntax  | Description |
-|---------|-------------|
-| profile | argument    |
-| test | 16s |
+
